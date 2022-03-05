@@ -1,7 +1,7 @@
-var randonText = "";
-var randomChars = "0123456789abcdefghijklmnopqrstuvwxyz";
+var myCode = "";
+var capthaCode = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*";
 
-for(var i = 0 ; i < 8 ; i++){
-    randonText += randomChars.charAt(Math.floor(Math.random() * 36));
+for(var i = 0 ; i < 16; i++) {
+    myCode += capthaCode.charAt(Math.floor(Math.random() * 70));
 }
-alert(randonText);
+console.log(myCode);
