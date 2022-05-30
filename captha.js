@@ -1,7 +1,11 @@
-var myCode = "";
-var capthaCode = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*";
+let myCaptha = document.querySelector("h1");
 
-for(var i = 0 ; i < 16; i++) {
-    myCode += capthaCode.charAt(Math.floor(Math.random() * 70));
+let myCode = "";
+let capthaCode =
+  "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*";
+
+for (let i = 0; i < 16; i++) {
+  myCode += capthaCode.charAt(Math.floor(Math.random() * 70));
 }
-console.log(myCode);
+
+myCaptha.innerHTML = myCode;

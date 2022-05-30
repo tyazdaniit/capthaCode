@@ -1,0 +1,10 @@
+body {
+  background-color: tomato;
+}
+h1 {
+  color: white;
+  border: 30px solid #333;
+  padding: 5px;
+  background-color: black;
+  width: fit-content;
+}
